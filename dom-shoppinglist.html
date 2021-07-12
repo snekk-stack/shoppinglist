@@ -31,52 +31,12 @@
     </ul>
 
     <script>
-        /* var uListItem = document.querySelector('ul');
-        var input = document.querySelector('input');
-        var button = document.querySelector('button').addEventListener('click', addItem);
-        var iListItem = document.createElement('li');
-        var span = document.createElement('span');
-        var nButton = document.createElement('button');
-        
-        function addItem(){
-            input.textContent = '';
-            iListItem.appendChild(span);
-            iListItem.appendChild(nButton);
-        } */
-        
-        // var button = document.querySelector('button').addEventListener('click', addItem);
-        /* var input = document.getElementById('item');
-        var button = document.querySelector('button').addEventListener('click',addItem);
-        var uList = document.querySelector('ul');
-        var iList = document.createElement('li');
-        var span = document.createElement('span');
-        var nButton = document.createElement('button');
-        nButton.textContent = 'delete';
-        nButton.addEventListener('click',deleteItem);
-        var listItem = input.value;
-        
-        function getFocus() {
-            document.getElementById('item').focus();
-        }
-        
-        function addItem(){
-            span.textContent = listItem;
-            input.value = '';
-            uList.appendChild(iList);
-            iList.appendChild(span);
-            iList.appendChild(nButton);
-            getFocus();
-        }
-        
-        function deleteItem(){
-            uList.removeChild(iList);
-        } */
         
         var list = document.querySelector('ul');
         var input = document.getElementById('item');
         var button = document.querySelector('button').addEventListener('click',addItem);
         
-        
+        //add items to shopping list
         function addItem(){
             var item = input.value;
             input.value = '';
@@ -87,6 +47,7 @@
             newButton.innerHTML = 'delete';
             newButton.addEventListener('click',deleteItem);
             
+                //delete items from shopping list
                 function deleteItem(){
                     list.removeChild(listItem);
                     console.log('deleted item');
@@ -98,12 +59,6 @@
             list.appendChild(listItem);
             console.log('added item');
         }
-        
-        
-
-
-
-        
         
     </script>
   </body>
